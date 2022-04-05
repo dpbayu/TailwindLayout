@@ -526,6 +526,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column-start: 1;
 }
 
+.col-start-9 {
+  grid-column-start: 9;
+}
+
+.col-start-7 {
+  grid-column-start: 7;
+}
+
+.col-start-8 {
+  grid-column-start: 8;
+}
+
 .row-start-3 {
   grid-row-start: 3;
 }
@@ -575,6 +587,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-40 {
   margin-bottom: 10rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
