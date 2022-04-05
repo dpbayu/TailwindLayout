@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- Flexbox -->
-    <!-- <section class="mb-40"> -->
-    <!-- Text -->
-    <!-- <h1 class="w-full font-bold text-center p-1 text-sm text-white bg-red-900">BIG SALE PROMO 11.11</h1>
-        <h1 class="w-full font-bold text-center p-1 text-sm text-white bg-red-600">GRATIS ONGKIR MIN. BELANJA RP 60.000
-        </h1> -->
-    <!-- Text -->
-    <!-- Content -->
-    <!-- First -->
-    <!-- <div class="w-full flex my-2">
+    <section class="mb-40">
+        <!-- Text -->
+        <h1 class="w-full font-bold text-center p-1 text-sm text-white bg-red-900">BIG SALE PROMO 11.11</h1>
+        <h2 class="w-full font-bold text-center p-1 text-sm text-white bg-red-600">GRATIS ONGKIR MIN. BELANJA RP 60.000
+        </h2>
+        <!-- Text -->
+        <!-- Content -->
+        <!-- First -->
+        <div class="w-full flex my-2">
             <div class="w-full flex justify-center">
                 <p class="font-semibold px-5 text-xs">#only for you</p>
                 <p class="font-semibold px-5 text-xs">daily care</p>
@@ -31,53 +32,84 @@
                 <p class="font-semibold px-5 text-xs">Social Media Beemall</p>
                 <p class="font-semibold px-5 text-xs">Customer Services</p>
             </div>
-        </div> -->
-    <!-- First -->
-    <!-- Second -->
-    <!-- <div class="w-full flex justify-center items-center my-5">
+        </div>
+        <!-- First -->
+        <!-- Second -->
+        <div class="w-full flex justify-center items-center my-5">
             <img class="w-10 mx-5" src="/dist/img/2.jpg">
             <img class="w-10 mx-5" src="/dist/img/2.jpg">
             <input
                 class="placeholder:italic mx-5 placeholder:text-slate-400 block bg-white w-[300px] border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
                 placeholder="Search for anything..." type="text" name="search" />
-            <svg class="mx-5" width="20px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
-            </svg>
-            <svg class="mx-5" width="20px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
-            </svg>
-            <svg class="mx-5" width="20px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
-            </svg>
+            <!-- Icon -->
+            <div class="flex">
+                <a href="#"
+                    class="relative w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-black hover:text-red-600">
+                    <svg class="fill-current" width="20px" role="img" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
+                    </svg>
+                    <span
+                        class="absolute text-xs -top-2 -right-3 flex justify-center items-center rounded-full w-5 h-5 bg-red-500 text-white">2</span>
+                </a>
+                <a href="#"
+                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-black hover:text-red-600">
+                    <svg class="fill-current" width="20px" role="img" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-black hover:text-red">
+                    <svg class="fill-current" width="20px" role="img" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
+                    </svg>
+                </a>
+            </div>
+            <!-- Icon -->
             <p class="mx-5">|</p>
             <p class="font-bold mx-2">Login</p>
             <p class="font-bold">|</p>
             <p class="font-bold mx-2">Register</p>
-        </div> -->
-    <!-- Second -->
-    <!-- Third -->
-    <!-- <div class="flex justify-center my-5x">
-            <img class="w-full h-96 px-20" src="/dist/img/2.jpg">
-        </div> -->
-    <!-- Third -->
-    <!-- </div> -->
-    <!-- Content -->
-    <!-- </section> -->
+        </div>
+        <!-- Second -->
+        <!-- Third -->
+        <div class="flex justify-center h-screen my-5x">
+            <div class="swiper w-full h-[500px] bg-slate-700">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img src="https://source.unsplash.com/450x450?beach" class="swiper-slide bg-cover"></img>
+                    <img src="https://source.unsplash.com/450x450?mountain" class="swiper-slide bg-cover"></img>
+                    <img src="https://source.unsplash.com/450x450?code" class="swiper-slide bg-cover"></img>
+                    <img src="https://source.unsplash.com/450x450?keyboard" class="swiper-slide bg-cover"></img>
+                    <img src="https://source.unsplash.com/450x450?game" class="swiper-slide bg-cover"></img>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- Third -->
+        </div>
+        <!-- Content -->
+    </section>
     <!-- Flexbox -->
 
     <!-- Grid -->
-    <section class="grid grid-cols-1 gap-0">
+    <!-- <section class="grid grid-cols-1 gap-0"> -->
         <!-- Text -->
-        <h1 class="w-full font-bold text-center p-1 text-sm text-white bg-red-900">BIG SALE PROMO 11.11</h1>
-        <h1 class="w-full font-bold text-center p-1 text-sm text-white bg-red-600">GRATIS ONGKIR MIN. BELANJA RP 60.000
-        </h1>
+        <!-- <h1 class="w-full font-bold text-center p-1 text-sm text-white bg-red-900">BIG SALE PROMO 11.11</h1>
+        <h2 class="w-full font-bold text-center p-1 text-sm text-white bg-red-600">GRATIS ONGKIR MIN. BELANJA RP 60.000
+        </h2> -->
         <!-- Text -->
         <!-- Content -->
         <!-- First -->
-        <div class="grid grid-cols-2 gap-2 mt-2">
+        <!-- <div class="grid grid-cols-2 gap-2 mt-2">
             <div class="grid grid-cols-5 gap-2">
                 <p class="h-15 col-start-2 row-start-1 aspect-[12/1] font-semibold px-5 text-xs">#only for
                     you</p>
@@ -92,10 +124,10 @@
                 <p class="h-15 aspect-[9/1] font-semibold px-5 text-xs">Social Media Beemall</p>
                 <p class="h-15 aspect-[9/1] font-semibold px-5 text-xs">Customer Services</p>
             </div>
-        </div>
+        </div> -->
         <!-- First -->
         <!-- Second -->
-        <div class="grid grid-cols-7 gap-5 my-5">
+        <!-- <div class="grid grid-cols-7 gap-5 my-5">
             <div class="grid grid-cols-2 col-start-2 row-start-1 gap-5 mx-4">
                 <img class="w-full h-12 aspect-[4/3]" src="/dist/img/2.jpg">
                 <img class="w-full h-12 aspect-[4/3]" src="/dist/img/2.jpg">
@@ -106,18 +138,18 @@
                     placeholder="Search for anything..." type="text" name="search" />
             </div>
             <div class="grid grid-cols-5 col-start-4 row-start-1 gap-5">
-                <svg class="col-start-2 row-start-1 aspect-[3/4] self-center" width="20px" role="img" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg class="col-start-2 row-start-1 aspect-[3/4] self-center" width="20px" role="img"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
                 </svg>
-                <svg class="col-start-3 row-start-1 aspect-[3/4] self-center" width="20px" role="img" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg class="col-start-3 row-start-1 aspect-[3/4] self-center" width="20px" role="img"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
                 </svg>
-                <svg class="col-start-4 row-start-1 aspect-[3/4] self-center" width="20px" role="img" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg class="col-start-4 row-start-1 aspect-[3/4] self-center" width="20px" role="img"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
                 </svg>
@@ -130,18 +162,22 @@
                 <p class="font-bold text-center aspect-[12/4] self-center">|</p>
                 <p class="font-bold aspect-[12/4] self-center">Register</p>
             </div>
-        </div>
+        </div> -->
         <!-- Second -->
         <!-- Third -->
-        <div class="grid grid-cols-1 mx-4">
+        <!-- <div class="grid grid-cols-1 mx-4">
             <img class="w-full aspect-[10/3]" src="/dist/img/2.jpg"></img>
-        </div>
+        </div> -->
         <!-- Third -->
-        </div>
+        <!-- </div> -->
         <!-- Content -->
-    </section>
+    <!-- </section> -->
     <!-- Grid -->
 
+    <!-- JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/dist/js/script.js"></script>
+    <!-- JS -->
 </body>
 
 </html>
