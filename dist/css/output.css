@@ -606,6 +606,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-row-start: 1;
 }
 
+.row-start-2 {
+  grid-row-start: 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -717,6 +721,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .aspect-\[4\/4\] {
   aspect-ratio: 4 / 4;
+}
+
+.aspect-\[1\/4\] {
+  aspect-ratio: 1 / 4;
 }
 
 .h-9 {
@@ -833,6 +841,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
 .flex-wrap {
@@ -1059,6 +1071,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:col-start-6 {
+    grid-column-start: 6;
+  }
+
+  .md\:col-start-7 {
+    grid-column-start: 7;
+  }
+
+  .md\:col-start-8 {
+    grid-column-start: 8;
+  }
+
+  .md\:col-start-9 {
+    grid-column-start: 9;
+  }
+
+  .md\:col-start-10 {
+    grid-column-start: 10;
+  }
+
+  .md\:col-start-11 {
+    grid-column-start: 11;
+  }
+
+  .md\:col-start-12 {
+    grid-column-start: 12;
+  }
+
+  .md\:row-start-1 {
+    grid-row-start: 1;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
