@@ -9,55 +9,6 @@
     <title>Star Rating</title>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        :root {
-            --body-bg: #1c2451;
-            --txt-color: #f1f1f1;
-            --star-color: #d4d4d4;
-            --yellow: #ffeb3b;
-            --blue: #0b75cb;
-            --green: #449a47;
-        }
-
-        .rating-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .rating-label {
-            margin-right: 2rem;
-        }
-
-        .rating-star {
-            position: relative;
-            display: flex;
-            margin: 10px 0;
-            flex-direction: row-reverse;
-        }
-
-        .rating-star input {
-            position: relative;
-            width: 20px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            cursor: pointer;
-            appearance: none;
-        }
-
-        .rating-star input::before {
-            content: '\eeb8';
-            position: absolute;
-            font-family: boxicons;
-            font-size: 34px;
-            position: absolute;
-            left: 4px;
-            color: var(--star-color);
-            transition: all .3s;
-        }
-
         input:nth-child(2n + 1)::before {
             right: 7px;
             left: initial;
@@ -76,13 +27,6 @@
         .rating-star.rating-blue input:checked::before {
             color: var(--blue);
         }
-
-        .rating-star.rating-green input:hover~input::before,
-        .rating-star.rating-green input:hover::before,
-        .rating-star.rating-green input:checked~input::before,
-        .rating-star.rating-green input:checked::before {
-            color: var(--green);
-        }
     </style>
 </head>
 
@@ -93,34 +37,34 @@
             <h3 class="mr-5">HTML5 Course</h3>
             <div class="relative flex my-5 flex-row-reverse">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
                 <input
-                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
+                    class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-gray-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="html">
             </div>
         </div>
@@ -157,21 +101,6 @@
                 <input
                     class="before:content-['\eeb8'] before:absolute before:font-['boxicons'] before:text-2xl before:left-2 before:text-blue-300 before:transition-all relative w-5 h-10 flex justify-center items-center overflow-hidden cursor-pointer appearance-none"
                     type="radio" name="css">
-            </div>
-        </div>
-        <div class="flex items-center justify-center">
-            <h3 class="rating-label">JavaScript Course</h3>
-            <div class="rating-star rating-blue">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
-                <input type="radio" name="js">
             </div>
         </div>
     </div>
