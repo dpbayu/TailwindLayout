@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Checkbox</title>
+    <style>
+        input[type="checkbox"]:checked:after {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="w-full h-full bg-blue-900 text-white mt-20">
+    <div class="h-[200px] w-[400px] absolute m-auto top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+        <input type="checkbox"
+            class="after:content-['\f00c'] after:font-['Font_Awesome_5_Free'] after:font-bold after:text-5xl after:text-amber-400 after:hidden appearance-none h-[80px] w-[80px] bg-white rounded-xl cursor-pointer flex items-center justify-center checked:bg-cyan-500"
+            id="check1">
+        <label for="check1">Checkbox</label>
+    </div>
+</body>
+
+</html>
