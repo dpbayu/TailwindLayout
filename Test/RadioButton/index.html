@@ -7,23 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Checkbox</title>
+  <title>Radio Button</title>
 </head>
 
-<body class="h-full w-full mt-56 flex-col bg-slate-300 justify-center items-center">
+<body>
   <div class="flex justify-center">
     <div>
       <div class="form-check">
         <input
-          class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-orange-600 checked:border-orange-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+          class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
           type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault1">
           Default radio
         </label>
       </div>
-      <div class="form-check">
+      <div class="form-check relative cursor-pointer">
         <input
-          class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+          class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-orange-600 checked:border-orange-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
           type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
         <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
           Default checked radio
@@ -32,5 +32,3 @@
     </div>
   </div>
 </body>
-
-</html>
